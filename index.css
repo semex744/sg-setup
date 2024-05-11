@@ -41,8 +41,7 @@
 
 .paragraph {
   text-align: center;
-  font-size: medium;
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   margin-left: 25%;
   margin-right: 25%;
@@ -90,10 +89,13 @@
     display: none;
   }
 
-  .body {
+  .task1 {
     background-color: white;
-    background-image: url("image/sg1\ bg.svg");
+    background-image: url("/image/sg1\ bg.svg");
     background-size: cover;
+
+    /* padding-bottom: 0%; */
+    margin-bottom: 0%;
   }
 }
 
@@ -117,4 +119,138 @@
     background-image: url("image/Header\ bg.svg");
     background-size: cover;
   }
+}
+
+.works {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box1 {
+  padding-bottom: 5%;
+}
+
+.Tonic {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+}
+
+.canopy ul {
+  display: flex;
+  gap: 15%;
+  font-size: 25px;
+}
+
+.paragraph2 {
+  font-size: 25px;
+  color: black;
+}
+
+.hcsjs {
+  border: 10px;
+  display: flex;
+  gap: 10%;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.html {
+  border-radius: 8px;
+  padding: 4px 12px;
+  width: 57px;
+  height: 24px;
+  background: #6070ff;
+}
+
+.css {
+  border-radius: 8px;
+  padding: 4px 12px;
+  width: 49px;
+  height: 24px;
+  background: #6070ff;
+}
+
+.js {
+  border-radius: 8px;
+  padding: 4px 12px;
+  width: 92px;
+  height: 24px;
+  background: #6070ff;
+}
+
+.btn2 button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 15px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 141%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #396df2;
+}
+
+.image {
+  margin-top: 20%;
+}
+
+.aboutmyself {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languege {
+  border: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.js_2 {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  margin-left: 7%;
+  background-color: beige;
+  margin-top: 8%;
+}
+
+.html_2 {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  margin-left: 7%;
+  background-color: beige;
+  margin-top: 5%;
+}
+
+.css_2 {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  margin-left: 7%;
+  background-color: beige;
+  margin-top: 5%;
+}
+
+.framework {
+  margin-top: 8%;
+  border: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  border: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
 }
