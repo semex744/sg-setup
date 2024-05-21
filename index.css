@@ -1,4 +1,3 @@
-
 .btn {
   align-self: flex-end;
   color: #6070ff;
@@ -103,11 +102,73 @@
     display: none;
   }
 
+  .image {
+    padding: 10%;
+  }
+
+  .task1 {
+    background-image: url("/image/Header\ bg.svg");
+    background-size: cover;
+  }
+
+  .image img {
+    width: 150%;
+  }
+
+  .box_1 {
+    margin-top: 10%;
+  }
+
+  .page1 {
+    display: flex;
+    justify-content: space-between;
+    border: 10px;
+    width: 80%;
+    margin-top: 10%;
+  }
+
+  .headline1 {
+    display: flex;
+    justify-content: space-between;
+    border: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    padding-right: 20%;
+    padding-left: 10%;
+  }
+
+  .logos {
+    display: flex;
+
+    /* margin-right: 100%; */
+
+    /* padding-right: 0%; */
+  }
+
+  .js_2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+  }
+
+  .html_2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .css_2 {
+    display: flex;
+    flex-direction: column;
+  }
+
   .works {
     background-color: white;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+
+    /* flex-direction: column; */
     align-items: center;
   }
 
@@ -123,14 +184,13 @@
 
   .body {
     background-color: white;
-    background-image: url("image/Header\ bg.svg");
     background-size: cover;
   }
 }
 
-.box1 {
+/* .box1 {
   padding-bottom: 5%;
-}
+} */
 
 .Tonic {
   font-family: var(--font-family);
@@ -196,16 +256,16 @@
   color: #396df2;
 }
 
-.image {
+/* .image {
   margin-top: 20%;
-}
+} */
 
-.aboutmyself {
+/* .aboutmyself {
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .languege {
   border: 10px;
@@ -260,6 +320,9 @@
   background-size: cover;
   margin: top 1px;
   padding-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
 }
 
 .head_h1 {
