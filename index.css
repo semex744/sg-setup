@@ -104,7 +104,7 @@
   .sem {
     width: 100px;
     height: 60px;
-    margin-left: 78%;
+    margin-left: 70%;
     position: fixed;
     margin-top: 20px;
   }
@@ -406,4 +406,9 @@
   font-size: 100%;
   border-radius: 10px;
   border: 2px solid #396df2;
+}
+
+.error-message {
+  color: black;
+  margin-bottom: 10px;
 }
