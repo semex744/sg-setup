@@ -1,5 +1,4 @@
 .btn {
-  align-self: flex-end;
   color: #6070ff;
   width: 15%;
   height: 15%;
@@ -74,18 +73,49 @@
   padding: 10px;
 }
 
-.btn svg {
-  width: 20px;
-  height: 20px;
-}
-
 .logo svg:hover {
   color: red;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 375px) {
+  .menu {
+    /* background-color: #396df2; */
+    width: 100vw;
+    margin-top: 100px;
+  }
+
   .menu-bar {
     display: none;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 30%;
+  }
+
+  .menu-bar li a {
+    font-size: 30px;
+    margin-top: 200px;
+    padding: 30px;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .sem {
+    width: 100px;
+    height: 60px;
+    margin-left: 78%;
+    position: fixed;
+    margin-top: 20px;
+  }
+
+  .x_close {
+    display: none;
+    width: 30px;
+    margin-left: 90%;
+    position: fixed;
+    padding-top: 0%;
+    margin-top: 0;
   }
 
   .task1 {
@@ -98,7 +128,7 @@
 }
 
 @media (min-width: 768px) {
-  .btn {
+  .sem {
     display: none;
   }
 
@@ -173,13 +203,29 @@
   }
 
   .menu-bar {
+    margin-top: 10%;
     display: flex;
     justify-content: flex-end;
+    flex-direction: row;
+    overflow: hidden;
+    width: auto;
+    background-color: white;
+  }
+
+  .menu {
+    width: auto;
+  }
+
+  .menu-bar li a {
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row;
+    background-color: none;
+    justify-content: space-between;
   }
 
   .menu-bar li {
-    display: block;
-    margin: 10px 0;
+    background-color: none;
   }
 
   .body {

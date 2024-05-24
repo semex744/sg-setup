@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Document</title>
+    <script>
+        function show() {
+  const icon = document.querySelector('.menu-bar');
+  const hamber = document.querySelector('.btn');
+  const xxx = document.querySelector('.x_close');
+  icon.style.display = 'flex';
+  hamber.style.display='none';
+  xxx.style.display = 'flex';
+
+}
+function back() {
+  const icon = document.querySelector('.menu-bar');
+  const hamber = document.querySelector('.btn');
+  const xxx = document.querySelector('.x_close');
+  icon.style.display = 'none';
+  hamber.style.display='block';
+  xxx.style.display='none';
+
+
+}
+    </script>
 </head>
 
 <body class="body">
@@ -13,18 +36,19 @@
         <div class="header">
             <div> <h1>My Logo</h1>
                 </div>     
+                <img src="image/close.png" class="x_close" onclick=back()>
                     <nav class="logo">
-                    <div class="btn" >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM3 12C3 11.4477 3.44772 11 4 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L4 13C3.44772 13 3 12.5523 3 12ZM4 16C3.44772 16 3 16.4477 3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17C21 16.4477 20.5523 16 20 16H4Z" fill="#6070FF"/>
+                    <div class="btn" onclick=show()>
+                <svg class="sem" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM3 12C3 11.4477 3.44772 11 4 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L4 13C3.44772 13 3 12.5523 3 12ZM4 16C3.44772 16 3 16.4477 3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17C21 16.4477 20.5523 16 20 16H4Z" fill="#6070FF"/>
                     </svg>
-                    
+
                 </div>
                     <div class="menu" >
                     <ul class="menu-bar" >
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                     </div>          
                 </nav>
@@ -56,7 +80,7 @@
           </section>
         </section>
     
-         <section class="works" >
+         <section class="works" id="portfolio">
             <section class="page1">
             <!-- <div class="box1" > -->
             <div class="image">
@@ -168,7 +192,7 @@
                         </section>
             </section>
         </section>
-            <section class="aboutmyself" >
+            <section class="aboutmyself" id="about" >
                 <div class="headline1"> 
                     <div class="abmyself">
                     <div class="headlinecontainer" >
@@ -222,7 +246,7 @@
         </div>
                 </div>
             </section>
-            <section class="contact_2" >
+            <section class="contact_2" id="contact" >
                 <div class="head">
                     <h1 class="head_h1">Contact me </h1>  
                   </div>
